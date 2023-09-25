@@ -1,0 +1,3 @@
+/mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build/CMakeFiles/GEOMETRIA.dir
+/mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build/CMakeFiles/rebuild_cache.dir

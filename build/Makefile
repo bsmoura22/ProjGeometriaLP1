@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22
+CMAKE_SOURCE_DIR = /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/src
+CMAKE_BINARY_DIR = /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/src/CMakeFiles /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/src//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build/CMakeFiles /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/biasm/Documents/Ativ1LP/laboratorio-1-bsmoura22/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named GEOMETRIA
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+GEOMETRIA: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GEOMETRIA
+.PHONY : GEOMETRIA
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+GEOMETRIA/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/build
+.PHONY : GEOMETRIA/fast
 
 circulo.o: circulo.cpp.o
 .PHONY : circulo.o
 
 # target to build an object file
 circulo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/circulo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/circulo.cpp.o
 .PHONY : circulo.cpp.o
 
 circulo.i: circulo.cpp.i
@@ -142,7 +142,7 @@ circulo.i: circulo.cpp.i
 
 # target to preprocess a source file
 circulo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/circulo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/circulo.cpp.i
 .PHONY : circulo.cpp.i
 
 circulo.s: circulo.cpp.s
@@ -150,7 +150,7 @@ circulo.s: circulo.cpp.s
 
 # target to generate assembly for a file
 circulo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/circulo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/circulo.cpp.s
 .PHONY : circulo.cpp.s
 
 cubo.o: cubo.cpp.o
@@ -158,7 +158,7 @@ cubo.o: cubo.cpp.o
 
 # target to build an object file
 cubo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cubo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/cubo.cpp.o
 .PHONY : cubo.cpp.o
 
 cubo.i: cubo.cpp.i
@@ -166,7 +166,7 @@ cubo.i: cubo.cpp.i
 
 # target to preprocess a source file
 cubo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cubo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/cubo.cpp.i
 .PHONY : cubo.cpp.i
 
 cubo.s: cubo.cpp.s
@@ -174,7 +174,7 @@ cubo.s: cubo.cpp.s
 
 # target to generate assembly for a file
 cubo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/cubo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/cubo.cpp.s
 .PHONY : cubo.cpp.s
 
 esfera.o: esfera.cpp.o
@@ -182,7 +182,7 @@ esfera.o: esfera.cpp.o
 
 # target to build an object file
 esfera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/esfera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/esfera.cpp.o
 .PHONY : esfera.cpp.o
 
 esfera.i: esfera.cpp.i
@@ -190,7 +190,7 @@ esfera.i: esfera.cpp.i
 
 # target to preprocess a source file
 esfera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/esfera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/esfera.cpp.i
 .PHONY : esfera.cpp.i
 
 esfera.s: esfera.cpp.s
@@ -198,7 +198,7 @@ esfera.s: esfera.cpp.s
 
 # target to generate assembly for a file
 esfera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/esfera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/esfera.cpp.s
 .PHONY : esfera.cpp.s
 
 main.o: main.cpp.o
@@ -206,7 +206,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -214,7 +214,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -222,7 +222,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 paralelepipedo.o: paralelepipedo.cpp.o
@@ -230,7 +230,7 @@ paralelepipedo.o: paralelepipedo.cpp.o
 
 # target to build an object file
 paralelepipedo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/paralelepipedo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/paralelepipedo.cpp.o
 .PHONY : paralelepipedo.cpp.o
 
 paralelepipedo.i: paralelepipedo.cpp.i
@@ -238,7 +238,7 @@ paralelepipedo.i: paralelepipedo.cpp.i
 
 # target to preprocess a source file
 paralelepipedo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/paralelepipedo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/paralelepipedo.cpp.i
 .PHONY : paralelepipedo.cpp.i
 
 paralelepipedo.s: paralelepipedo.cpp.s
@@ -246,7 +246,7 @@ paralelepipedo.s: paralelepipedo.cpp.s
 
 # target to generate assembly for a file
 paralelepipedo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/paralelepipedo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/paralelepipedo.cpp.s
 .PHONY : paralelepipedo.cpp.s
 
 piramide.o: piramide.cpp.o
@@ -254,7 +254,7 @@ piramide.o: piramide.cpp.o
 
 # target to build an object file
 piramide.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/piramide.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/piramide.cpp.o
 .PHONY : piramide.cpp.o
 
 piramide.i: piramide.cpp.i
@@ -262,7 +262,7 @@ piramide.i: piramide.cpp.i
 
 # target to preprocess a source file
 piramide.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/piramide.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/piramide.cpp.i
 .PHONY : piramide.cpp.i
 
 piramide.s: piramide.cpp.s
@@ -270,7 +270,7 @@ piramide.s: piramide.cpp.s
 
 # target to generate assembly for a file
 piramide.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/piramide.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/piramide.cpp.s
 .PHONY : piramide.cpp.s
 
 quadrado.o: quadrado.cpp.o
@@ -278,7 +278,7 @@ quadrado.o: quadrado.cpp.o
 
 # target to build an object file
 quadrado.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/quadrado.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/quadrado.cpp.o
 .PHONY : quadrado.cpp.o
 
 quadrado.i: quadrado.cpp.i
@@ -286,7 +286,7 @@ quadrado.i: quadrado.cpp.i
 
 # target to preprocess a source file
 quadrado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/quadrado.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/quadrado.cpp.i
 .PHONY : quadrado.cpp.i
 
 quadrado.s: quadrado.cpp.s
@@ -294,7 +294,7 @@ quadrado.s: quadrado.cpp.s
 
 # target to generate assembly for a file
 quadrado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/quadrado.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/quadrado.cpp.s
 .PHONY : quadrado.cpp.s
 
 retangulo.o: retangulo.cpp.o
@@ -302,7 +302,7 @@ retangulo.o: retangulo.cpp.o
 
 # target to build an object file
 retangulo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/retangulo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/retangulo.cpp.o
 .PHONY : retangulo.cpp.o
 
 retangulo.i: retangulo.cpp.i
@@ -310,7 +310,7 @@ retangulo.i: retangulo.cpp.i
 
 # target to preprocess a source file
 retangulo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/retangulo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/retangulo.cpp.i
 .PHONY : retangulo.cpp.i
 
 retangulo.s: retangulo.cpp.s
@@ -318,7 +318,7 @@ retangulo.s: retangulo.cpp.s
 
 # target to generate assembly for a file
 retangulo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/retangulo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/retangulo.cpp.s
 .PHONY : retangulo.cpp.s
 
 triangulo.o: triangulo.cpp.o
@@ -326,7 +326,7 @@ triangulo.o: triangulo.cpp.o
 
 # target to build an object file
 triangulo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/triangulo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/triangulo.cpp.o
 .PHONY : triangulo.cpp.o
 
 triangulo.i: triangulo.cpp.i
@@ -334,7 +334,7 @@ triangulo.i: triangulo.cpp.i
 
 # target to preprocess a source file
 triangulo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/triangulo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/triangulo.cpp.i
 .PHONY : triangulo.cpp.i
 
 triangulo.s: triangulo.cpp.s
@@ -342,7 +342,7 @@ triangulo.s: triangulo.cpp.s
 
 # target to generate assembly for a file
 triangulo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/triangulo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GEOMETRIA.dir/build.make CMakeFiles/GEOMETRIA.dir/triangulo.cpp.s
 .PHONY : triangulo.cpp.s
 
 # Help Target
@@ -353,7 +353,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
+	@echo "... GEOMETRIA"
 	@echo "... circulo.o"
 	@echo "... circulo.i"
 	@echo "... circulo.s"

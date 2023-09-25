@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/circulo.cpp.o CMakeFiles/main.dir/cubo.cpp.o CMakeFiles/main.dir/esfera.cpp.o CMakeFiles/main.dir/paralelepipedo.cpp.o CMakeFiles/main.dir/piramide.cpp.o CMakeFiles/main.dir/quadrado.cpp.o CMakeFiles/main.dir/retangulo.cpp.o CMakeFiles/main.dir/triangulo.cpp.o -o main 
